@@ -1,59 +1,9 @@
 extends ../jade/layout
 
 block head
-    - var pageDescription="Главная";
-    - var pageKeywords="Главная";
-    - var pageTitle="Главная";
+    - var pageDescription="Покупки";
+    - var pageKeywords="Покупки";
+    - var pageTitle="Покупки";
 
 block content
-    include ../blocks/shopList/shopList
-
-    +shopList({
-        list: [
-            {
-                title: 'Жидкое мыло'
-            },
-            {
-                title: 'Каша'
-            },
-            {
-                title: 'Хлеб'
-            },
-            {
-                title: 'Молоко'
-            },
-            {
-                title: 'Кефир'
-            },
-            {
-                title: 'Сыр'
-            },
-            {
-                title: 'Сметана'
-            },
-            {
-                title: 'Бананы'
-            },
-            {
-                title: 'Туалетная бумага'
-            },
-            {
-                title: 'Зубная паста'
-            },
-            {
-                title: 'Гель для душа'
-            },
-            {
-                title: 'Порошок'
-            },
-            {
-                title: 'Хлопья'
-            },
-            {
-                title: 'Мясо'
-            },
-            {
-                title: 'Курица'
-            }
-        ]
-    })
+    +shopList

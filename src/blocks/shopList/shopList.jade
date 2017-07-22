@@ -1,14 +1,59 @@
-include ../shopListItem/shopListItem
+include ../shopListHeader/shopListHeader
+include ../shopListMain/shopListMain
+include ../shopListFooter/shopListFooter
 
-mixin shopList(data)
-    - var shopListData = data ? data : {};
-
-    - shopListData.list = shopListData.list ? shopListData.list : [];
-
+mixin shopList
     +b('section').shopList
-        +e('div').wrapper
-            +e('div').content
-                +e('ul').list
-                    each item in shopListData.list
-                        +e('li').item
-                            +shopListItem(item)
+        +shopListHeader
+
+        +shopListMain({
+            list: [
+                {
+                    title: 'Жидкое мыло'
+                },
+                {
+                    title: 'Каша'
+                },
+                {
+                    title: 'Хлеб'
+                },
+                {
+                    title: 'Молоко'
+                },
+                {
+                    title: 'Кефир'
+                },
+                {
+                    title: 'Сыр'
+                },
+                {
+                    title: 'Сметана'
+                },
+                {
+                    title: 'Бананы'
+                },
+                {
+                    title: 'Туалетная бумага'
+                },
+                {
+                    title: 'Зубная паста'
+                },
+                {
+                    title: 'Гель для душа'
+                },
+                {
+                    title: 'Порошок'
+                },
+                {
+                    title: 'Хлопья'
+                },
+                {
+                    title: 'Мясо'
+                },
+                {
+                    title: 'Курица'
+                }
+            ]
+        })
+
+        +shopListFooter

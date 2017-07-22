@@ -6,4 +6,63 @@ $shopListItem: '.shopListItem';
         font-size: $font-size-default;
         line-height: $line-height-presmall;
     }
+
+    &__footer {
+        display: none;
+        margin-left: -12px;
+        margin-bottom: -1px;
+        padding-left: 12px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        background-color: $color-gallery;
+        border-bottom: 1px solid $color-gallery-dark;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        @include clearfix;
+    }
+
+    &__list,
+    &__item {
+        @include list-reset;
+    }
+
+    &__item {
+        margin-right: 20px;
+
+        @include f-last(1) {
+            margin-right: 0;
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 20px 20px;
+
+        &#{$shopListItem}__btn_type_complete {
+            background-image: url(../img/ico-complete.svg);
+        }
+
+        &#{$shopListItem}__btn_type_edit {
+            background-image: url(../img/ico-edit.svg);
+        }
+
+        &#{$shopListItem}__btn_type_photo {
+            background-image: url(../img/ico-photo.svg);
+        }
+    }
+
+    &#{$shopListItem}_state_open {
+        #{$shopListItem} {
+            &__footer {
+                display: block;
+            }
+        }
+    }
 }

@@ -8,3 +8,12 @@ mixin shopListItem(data)
             +e('div').content!= shopListItemData.title
 
             +e('div').footer
+                +e('ul').list
+                    +e('li').item
+                        +e('a').btn(href="#", class="shopListItem__btn_type_complete")
+
+                    +e('li').item
+                        +e('a').btn(href="#", class="shopListItem__btn_type_edit")
+
+                    +e('li').item
+                        +e('a').btn(href="#", class="shopListItem__btn_type_photo")

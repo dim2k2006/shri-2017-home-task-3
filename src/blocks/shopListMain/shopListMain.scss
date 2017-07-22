@@ -14,7 +14,7 @@ $shopListMain: '.shopListMain';
     }
 
     &__item {
-        border-bottom: 1px solid $color-gallery;
+        border-bottom: 1px solid $color-gallery-dark;
 
         @include f-last(1) {
             border: 0;

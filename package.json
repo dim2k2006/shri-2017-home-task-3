@@ -87,8 +87,6 @@
         ]
     },
     "vendorScripts": {
-        "path": [
-            "./src/bower_components/inobounce/inobounce.min.js"
-        ]
+        "path": []
     }
 }

@@ -1,6 +1,7 @@
 $shopListMain: '.shopListMain';
 
 #{$shopListMain} {
+    padding-top: $headerHeight;
     padding-left: 12px;
 
     &__list {

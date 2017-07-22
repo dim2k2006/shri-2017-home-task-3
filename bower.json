@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "dependencies": {
     "normalize.css": "~3.0.3",
-    "susy": "^2.2.12",
-    "inobounce": "iNoBounce#^0.1.4"
+    "susy": "^2.2.12"
   }
 }

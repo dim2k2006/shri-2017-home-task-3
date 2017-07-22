@@ -1,0 +1,10 @@
+mixin shopListItem(data)
+    - var shopListItemData = data ? data : {};
+
+    - shopListItemData.title = shopListItemData.title ? shopListItemData.title : 'Название товара';
+
+    +b('div').shopListItem
+        +e('div').wrapper
+            +e('div').content!= shopListItemData.title
+
+            +e('div').footer

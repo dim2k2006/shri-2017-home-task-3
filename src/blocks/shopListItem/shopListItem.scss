@@ -1,0 +1,9 @@
+$shopListItem: '.shopListItem';
+
+#{$shopListItem} {
+    &__content {
+        padding: 15px 0;
+        font-size: $font-size-default;
+        line-height: $line-height-presmall;
+    }
+}

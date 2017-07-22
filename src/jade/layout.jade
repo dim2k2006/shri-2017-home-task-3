@@ -1,0 +1,31 @@
+include mixins/bemto
+include ../blocks/header/header
+include ../blocks/footer/footer
+
+doctype html
+
+html(lang="ru")
+
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no")
+
+        block head
+        meta(name="Description" content=pageDescription || "")
+        meta(name="Keywords" content=pageKeywords || "")
+        title=pageTitle || ""
+
+        link(href='css/vendor.min.css' rel='stylesheet')
+        link(href='css/main.min.css' rel='stylesheet')
+    body
+        +b('section').wrapper
+            +header
+
+            +b('main').main
+                block content
+
+            +footer
+
+        script(src='js/vendor.min.js')
+        script(src='js/main.min.js')

@@ -1,0 +1,94 @@
+{
+    "name": "shop-list-app",
+    "displayName": "shopList",
+    "version": "0.1.0",
+    "description": "A sample Apache Cordova shop list application that responds to the deviceready event.",
+    "homepage": "https://github.com/dim2k2006/shri-2017-home-task-3",
+    "bugs": "https://github.com/dim2k2006/shri-2017-home-task-3/issues",
+    "main": "index.js",
+    "author": {
+        "name": "Dmitry",
+        "email": "dim2k2006@yandex.ru",
+        "url": "https://github.com/dim2k2006"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-whitelist": "^1.3.2"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    },
+    "devDependencies": {
+        "autoprefixer": "^6.3.1",
+        "babel-core": "^6.4.0",
+        "babel-preset-es2015": "^6.3.13",
+        "browser-sync": "^2.9.11",
+        "es5-shim": "^4.5.9",
+        "file-exists": "^1.0.0",
+        "glob": "^6.0.4",
+        "gulp": "^3.8.11",
+        "gulp-babel": "^6.1.2",
+        "gulp-cached": "^1.1.0",
+        "gulp-clean": "^0.3.1",
+        "gulp-combine-media-queries": "^0.2.0",
+        "gulp-combine-mq": "^0.4.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-concat-css": "^2.2.0",
+        "gulp-file": "^0.2.0",
+        "gulp-filter": "^3.0.1",
+        "gulp-html-prettify": "0.0.1",
+        "gulp-if": "^1.2.5",
+        "gulp-imagemin": "^2.3.0",
+        "gulp-inline": "^0.1.0",
+        "gulp-jade": "^1.1.0",
+        "gulp-jade-inheritance": "^0.5.4",
+        "gulp-minify-css": "^1.1.1",
+        "gulp-plumber": "^1.0.1",
+        "gulp-postcss": "^6.0.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-run": "^1.6.11",
+        "gulp-sass": "^2.1.1",
+        "gulp-sass-bulk-import": "^1.0.1",
+        "gulp-sass-glob": "^1.0.5",
+        "gulp-sftp": "^0.1.4",
+        "gulp-sourcemaps": "^1.6.0",
+        "gulp-uglify": "^1.2.0",
+        "gulp-util": "^3.0.6",
+        "gulp-watch": "^4.3.5",
+        "gulp-zip": "^3.0.2",
+        "imagemin-pngquant": "^4.2.0",
+        "path": "^0.12.7",
+        "require-dir": "^0.3.0",
+        "run-sequence": "^1.1.2",
+        "vinyl-buffer": "^1.0.0",
+        "vinyl-ftp": "^0.4.5",
+        "vinyl-source-stream": "^1.1.0"
+    },
+    "browsers": {
+        "android": 4,
+        "chrome": 42,
+        "firefox": 37,
+        "ie": 9,
+        "ios": 7,
+        "opera": 28,
+        "safari": 7
+    },
+    "vendorStyles": {
+        "path": [
+            "./src/bower_components/normalize.css/normalize.css"
+        ]
+    },
+    "vendorScripts": {
+        "path": [
+            "./src/bower_components/inobounce/inobounce.min.js"
+        ]
+    }
+}

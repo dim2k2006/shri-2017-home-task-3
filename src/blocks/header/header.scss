@@ -1,0 +1,23 @@
+$header: '.header';
+
+#{$header} {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: $headerHeight;
+    top: 0;
+    left: 0;
+    color: $color-white;
+    text-align: center;
+    background-color: $color-valencia;
+
+    &__title {
+        padding-bottom: 10px;
+
+        h1 {
+            font-size: $font-size-default;
+        }
+    }
+}

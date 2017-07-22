@@ -1,0 +1,14 @@
+include ../shopListItem/shopListItem
+
+mixin shopList(data)
+    - var shopListData = data ? data : {};
+
+    - shopListData.list = shopListData.list ? shopListData.list : [];
+
+    +b('section').shopList
+        +e('div').wrapper
+            +e('div').content
+                +e('ul').list
+                    each item in shopListData.list
+                        +e('li').item
+                            +shopListItem(item)

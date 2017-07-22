@@ -6,5 +6,27 @@ block head
     - var pageTitle="Главная";
 
 block content
-    +e('div')(style="height: 2000px;")
-        h1 контент
+    include ../blocks/shopList/shopList
+
+    +shopList({
+        list: [
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            },
+            {
+
+            }
+        ]
+    })

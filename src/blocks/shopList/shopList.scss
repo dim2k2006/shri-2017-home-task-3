@@ -1,0 +1,18 @@
+$shopList: '.shopList';
+
+#{$shopList} {
+    padding-left: 12px;
+
+    &__list {
+        @include clearfix;
+    }
+
+    &__list,
+    &__item {
+        @include list-reset;
+    }
+
+    &__item {
+        border-bottom: 1px solid $color-gallery;
+    }
+}

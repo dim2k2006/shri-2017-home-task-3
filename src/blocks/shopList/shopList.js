@@ -16,6 +16,7 @@
             self.openFooterBtn = document.querySelector('.shopListMain__open');
             self.footer = document.querySelector('.shopListFooter');
             self.input = document.querySelector('.shopListFooter__input');
+            self.hidden = document.querySelector('.shopListFooter__hidden');
             self.form = document.querySelector('.shopListFooter__form');
             self.submitBtn = document.querySelector('.shopListFooter__btn.shopListFooter__btn_type_submit');
             self.shopList = [];
@@ -61,6 +62,10 @@
             } else if (target.classList.contains('shopListItem__btn_type_complete')) {
 
                 method = 'complete';
+
+            } else if (target.classList.contains('shopListItem__btn_type_edit')) {
+
+                method = 'edit';
 
             }
 
@@ -123,6 +128,25 @@
         };
 
         /**
+         * Edit shop item content
+         * @param {Object} event
+         */
+        self.edit = event => {
+            const target = event.target;
+            const id = target.getAttribute('data-id');
+            const value = self.shopList.find(shopItem => shopItem.id == id);
+
+            if (id && value) {
+
+                self.input.value = value.title;
+                self.hidden.value = id;
+
+                self.openFooter(event);
+
+            }
+        };
+
+        /**
          * Show footer with input field
          * @param {Object} event
          */
@@ -179,6 +203,7 @@
             }
 
             const value = self.input.value;
+            const hiddenValue = self.hidden.value;
             const length = value.length;
 
             if (length === 0) {
@@ -188,14 +213,23 @@
             }
 
             const shopListLength = self.shopList.length;
-            const id = shopListLength === 0 ? 0 : shopListLength + 1;
+            const id = hiddenValue ? hiddenValue :  (shopListLength === '0') ? '0' : '' + (shopListLength + 1);
             const isOpen = false;
+            const item = self.shopList.find(shopItem => shopItem.id == id);
 
-            self.shopList.push({
-                id: id,
-                title: value,
-                isOpen: isOpen
-            });
+            if (item) {
+
+                item.title = value;
+
+            } else {
+
+                self.shopList.push({
+                    id: id,
+                    title: value,
+                    isOpen: isOpen
+                });
+
+            }
 
             self.reset();
             self.render();
@@ -207,6 +241,7 @@
          */
         self.reset = () => {
             self.form.reset();
+            self.hidden.value = '';
         };
 
         /**
@@ -226,6 +261,7 @@
                 element.querySelector('.shopListItem__content').setAttribute('data-id', item.id);
                 element.querySelector('.shopListItem__content').innerHTML = item.title;
                 element.querySelector('.shopListItem__btn_type_complete').setAttribute('data-id', item.id);
+                element.querySelector('.shopListItem__btn_type_edit').setAttribute('data-id', item.id);
 
                 if (item.isOpen) {
 

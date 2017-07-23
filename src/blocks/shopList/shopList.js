@@ -43,6 +43,37 @@
             self.input.addEventListener('keyup', self.handleKeyUp);
             self.form.addEventListener('submit', self.submit);
             self.submitBtn.addEventListener('click', self.handleFocus);
+            self.container.addEventListener('click', self.toggleItemPanel);
+        };
+
+        /**
+         * Toggle shop item panel
+         * @param event
+         */
+        self.toggleItemPanel = event => {
+            const target = event.target;
+
+            if (target.classList.contains('shopListItem__content')) {
+
+                const id = target.id;
+
+                if (id) {
+
+                    self.shopList = self.shopList.map(shopItem => {
+                        if (shopItem.id == id) {
+
+                            shopItem.isOpen = !shopItem.isOpen;
+
+                        }
+
+                        return shopItem;
+                    });
+
+                    self.render();
+
+                }
+
+            }
         };
 
         /**
@@ -145,12 +176,12 @@
                 element.classList.add('shopListMain__item');
                 element.innerHTML = self.template;
 
-                element.querySelector('.shopListItem').id = item.id;
+                element.querySelector('.shopListItem__content').id = item.id;
                 element.querySelector('.shopListItem__content').innerHTML = item.title;
 
                 if (item.isOpen) {
 
-                    element.classList.add('shopListItem_state_open');
+                    element.querySelector('.shopListItem').classList.add('shopListItem_state_open');
 
                 }
 

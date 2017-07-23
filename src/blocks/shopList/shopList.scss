@@ -10,4 +10,18 @@ $shopList: '.shopList';
             }
         }
     }
+
+    &#{$shopList}_state_add {
+        #{$shopListFooter} {
+            display: flex;
+        }
+
+        #{$shopListMain} {
+            padding-bottom: $footerHeight;
+
+            &__footer {
+                display: none;
+            }
+        }
+    }
 }

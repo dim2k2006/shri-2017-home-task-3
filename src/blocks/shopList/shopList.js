@@ -17,6 +17,7 @@
             self.footer = document.querySelector('.shopListFooter');
             self.input = document.querySelector('.shopListFooter__input');
             self.form = document.querySelector('.shopListFooter__form');
+            self.submitBtn = document.querySelector('.shopListFooter__btn.shopListFooter__btn_type_submit');
             self.shopList = [];
         };
 
@@ -41,6 +42,7 @@
             self.footer.addEventListener('click', self.closeFooter);
             self.input.addEventListener('keyup', self.handleKeyUp);
             self.form.addEventListener('submit', self.submit);
+            self.submitBtn.addEventListener('click', self.handleFocus);
         };
 
         /**
@@ -77,11 +79,26 @@
         };
 
         /**
+         * Keep input focus
+         * @param {Object} event
+         */
+        self.handleFocus = event => {
+            event.preventDefault();
+
+            self.submit();
+            self.input.focus();
+        };
+
+        /**
          * Handle form submission. Add new item to shop list
          * @param {Object} event
          */
         self.submit = event => {
-            event.preventDefault();
+            if (event) {
+
+                event.preventDefault();
+
+            }
 
             const value = self.input.value;
             const length = value.length;

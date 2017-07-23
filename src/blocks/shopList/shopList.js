@@ -13,6 +13,8 @@
             self.container = document.querySelector('.shopList');
             self.content = document.querySelector('.shopListMain__content');
             self.template = document.querySelector('#shopListItem').innerHTML;
+            self.openFooterBtn = document.querySelector('.shopListMain__open');
+            self.footer = document.querySelector('.shopListFooter');
             self.shopList = [];
         };
 
@@ -33,7 +35,30 @@
          * Add events listeners
          */
         self.setupListener = () => {
+            self.openFooterBtn.addEventListener('click', self.openFooter);
+            self.footer.addEventListener('click', self.closeFooter);
+        };
 
+        /**
+         * Show footer with input field
+         * @param {Object} event
+         */
+        self.openFooter = event => {
+            event.preventDefault();
+
+            self.container.classList.add('shopList_state_add');
+        };
+
+        /**
+         * Close footer if click outside of footer input
+         * @param {Object} event
+         */
+        self.closeFooter = event => {
+            if (event.target === self.footer) {
+
+                self.container.classList.remove('shopList_state_add');
+
+            }
         };
 
         /**

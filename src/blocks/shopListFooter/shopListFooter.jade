@@ -2,3 +2,20 @@ mixin shopListFooter
     +b('footer').shopListFooter
         +e('div').wrapper
             +e('div').content
+                +e('div').field
+                    //button.shopListFooter__btn(class="shopListFooter__btn_type_photo")
+
+                    +e('input').input(type="text", placeholder="Например, овсяные хлопья")
+
+                    button.shopListFooter__btn(class="shopListFooter__btn_type_submit")
+
+            +e('div').footer
+                +e('ul').list
+                    +e('li').item
+                        +e('img')(src="img/vis-photo-1.jpg")
+
+                    +e('li').item
+                        +e('img')(src="img/vis-photo-2.jpg")
+
+                    +e('li').item
+                        +e('img')(src="img/vis-photo-3.jpg")

@@ -11,4 +11,8 @@
 @import 'base/family.scss';
 
 /* BLOCKS */
-@import "../blocks/**/*.scss";
+@import "../blocks/shopListHeader/shopListHeader";
+@import "../blocks/shopListMain/shopListMain";
+@import "../blocks/shopListFooter/shopListFooter";
+@import "../blocks/shopListItem/shopListItem";
+@import "../blocks/shopList/shopList";

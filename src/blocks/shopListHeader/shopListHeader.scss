@@ -12,6 +12,7 @@ $shopListHeader: '.shopListHeader';
     color: $color-white;
     text-align: center;
     background-color: $color-valencia;
+    z-index: 100;
 
     &__title {
         padding-bottom: 10px;

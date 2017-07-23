@@ -8,10 +8,9 @@ mixin shopListMain(data)
     +b('section').shopListMain
         +e('div').wrapper
             +e('div').content
-                +e('ul').list
-                    each item in shopListMainData.list
-                        +e('li').item
-                            +shopListItem(item)
 
             +e('div').footer
+                +e('div').template(id="shopListItem")
+                    +shopListItem
+
                 button.shopListMain__add

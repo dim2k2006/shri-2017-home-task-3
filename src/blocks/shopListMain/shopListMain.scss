@@ -43,6 +43,10 @@ $shopListMain: '.shopListMain';
         }
     }
 
+    &__template {
+        display: none;
+    }
+
     &__add {
         position: fixed;
         display: block;

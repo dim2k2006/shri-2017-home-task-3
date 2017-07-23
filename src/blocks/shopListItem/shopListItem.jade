@@ -1,7 +1,7 @@
 mixin shopListItem(data)
     - var shopListItemData = data ? data : {};
 
-    - shopListItemData.title = shopListItemData.title ? shopListItemData.title : 'Название товара';
+    - shopListItemData.title = shopListItemData.title ? shopListItemData.title : '';
 
     +b('div').shopListItem
         +e('div').wrapper
@@ -10,10 +10,10 @@ mixin shopListItem(data)
             +e('div').footer
                 +e('ul').list
                     +e('li').item
-                        +e('a').btn(href="#", class="shopListItem__btn_type_complete")
+                        button.shopListItem__btn(href="#", class="shopListItem__btn_type_complete")
 
                     +e('li').item
-                        +e('a').btn(href="#", class="shopListItem__btn_type_edit")
+                        button.shopListItem__btn(href="#", class="shopListItem__btn_type_edit")
 
                     +e('li').item
-                        +e('a').btn(href="#", class="shopListItem__btn_type_photo")
+                        button.shopListItem__btn(href="#", class="shopListItem__btn_type_photo")

@@ -39,8 +39,16 @@
          * Add events listeners
          */
         self.setupListener = () => {
-            self.openFooterBtn.addEventListener('click', self.openFooter);
-            self.footer.addEventListener('click', self.closeFooter);
+            self.openFooterBtn.addEventListener('click', event => {
+                event.preventDefault(); self.openFooter()
+            });
+            self.footer.addEventListener('click', event => {
+                if (event.target === self.footer && self.input.value.length === 0) {
+
+                    self.closeFooter();
+
+                }
+            });
             self.input.addEventListener('keyup', self.handleKeyUp);
             self.form.addEventListener('submit', self.submit);
             self.submitBtn.addEventListener('click', self.handleFocus);
@@ -100,6 +108,7 @@
                     });
 
                     self.render();
+                    self.updateLocalStorage();
 
                 }
 
@@ -141,32 +150,24 @@
                 self.input.value = value.title;
                 self.hidden.value = id;
 
-                self.openFooter(event);
+                self.openFooter();
 
             }
         };
 
         /**
          * Show footer with input field
-         * @param {Object} event
          */
-        self.openFooter = event => {
-            event.preventDefault();
-
+        self.openFooter = () => {
             self.container.classList.add('shopList_state_add');
             self.input.focus();
         };
 
         /**
          * Close footer if click outside of footer input
-         * @param {Object} event
          */
-        self.closeFooter = event => {
-            if (event.target === self.footer && self.input.value.length === 0) {
-
-                self.container.classList.remove('shopList_state_add');
-
-            }
+        self.closeFooter = () => {
+            self.container.classList.remove('shopList_state_add');
         };
 
         /**
@@ -220,6 +221,7 @@
             if (item) {
 
                 item.title = value;
+                self.closeFooter();
 
             } else {
 

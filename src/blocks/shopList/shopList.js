@@ -43,7 +43,32 @@
             self.input.addEventListener('keyup', self.handleKeyUp);
             self.form.addEventListener('submit', self.submit);
             self.submitBtn.addEventListener('click', self.handleFocus);
-            self.container.addEventListener('click', self.toggleItemPanel);
+            self.container.addEventListener('click', self.routeClick);
+        };
+
+        /**
+         * Routes click event
+         * @param {Object} event
+         */
+        self.routeClick = event => {
+            const target = event.target;
+            let method = '';
+
+            if (target.classList.contains('shopListItem__content')) {
+
+                method = 'toggleItemPanel';
+
+            } else if (target.classList.contains('shopListItem__btn_type_complete')) {
+
+                method = 'complete';
+
+            }
+
+            if (method) {
+
+                self[method](event);
+
+            }
         };
 
         /**
@@ -55,7 +80,7 @@
 
             if (target.classList.contains('shopListItem__content')) {
 
-                const id = target.id;
+                const id = target.getAttribute('data-id');
 
                 if (id) {
 
@@ -72,6 +97,27 @@
                     self.render();
 
                 }
+
+            }
+        };
+
+        /**
+         * Remove shop item from list
+         * @param {Object} event
+         */
+        self.complete = event => {
+            const target = event.target;
+            const id = target.getAttribute('data-id');
+
+            if (id) {
+
+                self.shopList = self.shopList.filter(shopItem => {
+                    return shopItem.id != id;
+                });
+
+
+                self.render();
+                self.updateLocalStorage();
 
             }
         };
@@ -176,8 +222,9 @@
                 element.classList.add('shopListMain__item');
                 element.innerHTML = self.template;
 
-                element.querySelector('.shopListItem__content').id = item.id;
+                element.querySelector('.shopListItem__content').setAttribute('data-id', item.id);
                 element.querySelector('.shopListItem__content').innerHTML = item.title;
+                element.querySelector('.shopListItem__btn_type_complete').setAttribute('data-id', item.id);
 
                 if (item.isOpen) {
 

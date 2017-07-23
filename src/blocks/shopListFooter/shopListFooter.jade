@@ -2,12 +2,12 @@ mixin shopListFooter
     +b('footer').shopListFooter
         +e('div').wrapper
             +e('div').content
-                +e('div').field
+                +e('form').form
                     //button.shopListFooter__btn(class="shopListFooter__btn_type_photo")
 
                     +e('input').input(type="text", placeholder="Например, овсяные хлопья")
 
-                    button.shopListFooter__btn(class="shopListFooter__btn_type_submit")
+                    button.shopListFooter__btn(class="shopListFooter__btn_type_submit", type="submit")
 
             +e('div').footer
                 +e('ul').list

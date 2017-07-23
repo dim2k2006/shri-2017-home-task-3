@@ -16,6 +16,7 @@
             self.openFooterBtn = document.querySelector('.shopListMain__open');
             self.footer = document.querySelector('.shopListFooter');
             self.input = document.querySelector('.shopListFooter__input');
+            self.form = document.querySelector('.shopListFooter__form');
             self.shopList = [];
         };
 
@@ -39,6 +40,7 @@
             self.openFooterBtn.addEventListener('click', self.openFooter);
             self.footer.addEventListener('click', self.closeFooter);
             self.input.addEventListener('keyup', self.handleKeyUp);
+            self.form.addEventListener('submit', self.submit);
         };
 
         /**
@@ -72,6 +74,44 @@
             const method = length > 0 ? 'add' : 'remove';
 
             self.container.classList[method]('shopList_state_valid');
+        };
+
+        /**
+         * Handle form submission. Add new item to shop list
+         * @param {Object} event
+         */
+        self.submit = event => {
+            event.preventDefault();
+
+            const value = self.input.value;
+            const length = value.length;
+
+            if (length === 0) {
+
+                return false;
+
+            }
+
+            const shopListLength = self.shopList.length;
+            const id = shopListLength === 0 ? 0 : shopListLength + 1;
+            const isOpen = false;
+
+            self.shopList.push({
+                id: id,
+                title: value,
+                isOpen: isOpen
+            });
+
+            self.reset();
+            self.render();
+            self.updateLocalStorage();
+        };
+
+        /**
+         * Reset form
+         */
+        self.reset = () => {
+            self.form.reset();
         };
 
         /**

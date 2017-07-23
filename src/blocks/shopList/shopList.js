@@ -130,6 +130,7 @@
             event.preventDefault();
 
             self.container.classList.add('shopList_state_add');
+            self.input.focus();
         };
 
         /**

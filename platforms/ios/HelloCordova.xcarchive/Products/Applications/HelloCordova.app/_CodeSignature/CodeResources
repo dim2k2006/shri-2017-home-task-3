@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		Gbp9H5mZyCCDYV9Yd6iY19SKReY=
+		r2B/r4pslROoPjGL5g99k9s52N4=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		9vf0S83v2SxjL0+NbDngvzfoF0I=
+		/usHObLSqlCMBSSWgNTiw+ZVgfI=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		oZwmYoD8Eq6CNhzaq17gtyshvRA=
+		4RximWJiq23d/J5UQXzKPf25TNM=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -230,11 +230,11 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		PgqN1J7yAU3G6xSdtnl0RdrcyF0=
+		V+3Cc5PV28SNBREanDQcisyKSt4=
 		</data>
 		<key>www/js/main.min.js</key>
 		<data>
-		dOn/ZEWHpM/g5cksPp0Y8x6MTiQ=
+		a2OrQDiv1xSGcNjm0Y4UPWffpr4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -321,7 +321,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		Gbp9H5mZyCCDYV9Yd6iY19SKReY=
+		r2B/r4pslROoPjGL5g99k9s52N4=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -329,7 +329,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		9vf0S83v2SxjL0+NbDngvzfoF0I=
+		/usHObLSqlCMBSSWgNTiw+ZVgfI=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -389,7 +389,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		oZwmYoD8Eq6CNhzaq17gtyshvRA=
+		4RximWJiq23d/J5UQXzKPf25TNM=
 		</data>
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
@@ -457,11 +457,11 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		PgqN1J7yAU3G6xSdtnl0RdrcyF0=
+		V+3Cc5PV28SNBREanDQcisyKSt4=
 		</data>
 		<key>www/js/main.min.js</key>
 		<data>
-		dOn/ZEWHpM/g5cksPp0Y8x6MTiQ=
+		a2OrQDiv1xSGcNjm0Y4UPWffpr4=
 		</data>
 	</dict>
 	<key>rules</key>

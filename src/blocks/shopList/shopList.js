@@ -15,6 +15,7 @@
             self.template = document.querySelector('#shopListItem').innerHTML;
             self.openFooterBtn = document.querySelector('.shopListMain__open');
             self.footer = document.querySelector('.shopListFooter');
+            self.input = document.querySelector('.shopListFooter__input');
             self.shopList = [];
         };
 
@@ -37,6 +38,7 @@
         self.setupListener = () => {
             self.openFooterBtn.addEventListener('click', self.openFooter);
             self.footer.addEventListener('click', self.closeFooter);
+            self.input.addEventListener('keyup', self.handleKeyUp);
         };
 
         /**
@@ -54,11 +56,22 @@
          * @param {Object} event
          */
         self.closeFooter = event => {
-            if (event.target === self.footer) {
+            if (event.target === self.footer && self.input.value.length === 0) {
 
                 self.container.classList.remove('shopList_state_add');
 
             }
+        };
+
+        /**
+         * Check if input value length > 0 and change container state
+         */
+        self.handleKeyUp = () => {
+            const value = self.input.value;
+            const length = value.length;
+            const method = length > 0 ? 'add' : 'remove';
+
+            self.container.classList[method]('shopList_state_valid');
         };
 
         /**

@@ -44,6 +44,7 @@ $shopListFooter: '.shopListFooter';
         transform: translateY(-50%);
         background-repeat: no-repeat;
         background-position: 50% 50%;
+        pointer-events: none;
 
         &#{$shopListFooter}__btn_type_submit {
             right: 10px;

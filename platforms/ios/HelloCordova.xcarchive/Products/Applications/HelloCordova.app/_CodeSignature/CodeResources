@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		1ZW/HY+9XjbxXUabjv27/CEd1xk=
+		ksJpcgPnY9ijRLlm/DczVOPTQhM=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		FX3GZZzHcO9XCFWDWMDbWlZ0reA=
+		1aUtuarXOQYCWmDXf7PuWBVBaEI=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		h6A6JF44O4sDoW8kXLaXZuUMv9U=
+		lF05CZ3NVql6Bf089nVboKjgqz0=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>www/css/main.min.css</key>
 		<data>
-		zXGRALsSRtYmQDz0owCr80y/zN4=
+		ZgnT5xt1ZCt1DSuKK/SsegsjHXY=
 		</data>
 		<key>www/css/vendor.min.css</key>
 		<data>
@@ -230,11 +230,11 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		JHLXQ8fSVZ64ecVed++5VkqEzu4=
+		I5lFwFS8CG5hN3RuzqoziV/UFeI=
 		</data>
 		<key>www/js/main.min.js</key>
 		<data>
-		kzrwCsOZ1gjnLe4x9FHXDMqCRhc=
+		X+F7g+H2KWddSN9jH8JjO6v/tQg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -321,7 +321,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		1ZW/HY+9XjbxXUabjv27/CEd1xk=
+		ksJpcgPnY9ijRLlm/DczVOPTQhM=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -329,7 +329,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		FX3GZZzHcO9XCFWDWMDbWlZ0reA=
+		1aUtuarXOQYCWmDXf7PuWBVBaEI=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -389,7 +389,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		h6A6JF44O4sDoW8kXLaXZuUMv9U=
+		lF05CZ3NVql6Bf089nVboKjgqz0=
 		</data>
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
@@ -421,7 +421,7 @@
 		</data>
 		<key>www/css/main.min.css</key>
 		<data>
-		zXGRALsSRtYmQDz0owCr80y/zN4=
+		ZgnT5xt1ZCt1DSuKK/SsegsjHXY=
 		</data>
 		<key>www/css/vendor.min.css</key>
 		<data>
@@ -457,11 +457,11 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		JHLXQ8fSVZ64ecVed++5VkqEzu4=
+		I5lFwFS8CG5hN3RuzqoziV/UFeI=
 		</data>
 		<key>www/js/main.min.js</key>
 		<data>
-		kzrwCsOZ1gjnLe4x9FHXDMqCRhc=
+		X+F7g+H2KWddSN9jH8JjO6v/tQg=
 		</data>
 	</dict>
 	<key>rules</key>

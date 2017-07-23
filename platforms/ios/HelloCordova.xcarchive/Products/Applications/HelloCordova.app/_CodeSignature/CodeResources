@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		X17KlGguaG2muFOLAg/QN2GxY3k=
+		tjN0vY8KuLXWhhRVnYQPU3I5Chk=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		53ioUGb5fkt/oBAExC9rH8fvpvQ=
+		9ri99v7qVOazpXC7/o1cZ0zdcdw=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		58bIvHTZHPt6HY3TTlsVN6mZgb4=
+		UvMZOteM+tqbeBGSTCEWw3OW/zw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -194,15 +194,43 @@
 		</data>
 		<key>www/css/main.min.css</key>
 		<data>
-		Et11tFWDjiTkctpgIYNtRSco5uI=
+		R68kyajVFhexv3cYlpA0QTtKavY=
 		</data>
 		<key>www/css/vendor.min.css</key>
 		<data>
 		6eMag0tww+OvdsrwVl9bPLNwK8E=
 		</data>
+		<key>www/img/ico-complete.svg</key>
+		<data>
+		4mlKCHpscP7nDYtLLX/plV4Lu0k=
+		</data>
+		<key>www/img/ico-edit.svg</key>
+		<data>
+		0WOxsV2yeXOT09eFxhcIPVYT4N8=
+		</data>
+		<key>www/img/ico-photo.svg</key>
+		<data>
+		9gN1M3Bl856BKlgK2EcwUGBLk/s=
+		</data>
+		<key>www/img/ico-plane.svg</key>
+		<data>
+		iFIQpGwdwl5Aau0ZkyHjoWYsWnI=
+		</data>
+		<key>www/img/vis-photo-1.jpg</key>
+		<data>
+		uUlr7x+wzDDQxK+JIVOHWfawhsw=
+		</data>
+		<key>www/img/vis-photo-2.jpg</key>
+		<data>
+		GK8VudvpacRUVtt9C+JiEigyQHE=
+		</data>
+		<key>www/img/vis-photo-3.jpg</key>
+		<data>
+		+dKkMeqQVzEriSwyHPu0N1Ay8Sk=
+		</data>
 		<key>www/index.html</key>
 		<data>
-		YBaWZND9iRmw6qmhIUNdJGhWpGY=
+		J47L9bFshCVWCGBeb7d+k3uAK+k=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -289,7 +317,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		X17KlGguaG2muFOLAg/QN2GxY3k=
+		tjN0vY8KuLXWhhRVnYQPU3I5Chk=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -297,7 +325,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		53ioUGb5fkt/oBAExC9rH8fvpvQ=
+		9ri99v7qVOazpXC7/o1cZ0zdcdw=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -357,7 +385,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		58bIvHTZHPt6HY3TTlsVN6mZgb4=
+		UvMZOteM+tqbeBGSTCEWw3OW/zw=
 		</data>
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
@@ -389,15 +417,43 @@
 		</data>
 		<key>www/css/main.min.css</key>
 		<data>
-		Et11tFWDjiTkctpgIYNtRSco5uI=
+		R68kyajVFhexv3cYlpA0QTtKavY=
 		</data>
 		<key>www/css/vendor.min.css</key>
 		<data>
 		6eMag0tww+OvdsrwVl9bPLNwK8E=
 		</data>
+		<key>www/img/ico-complete.svg</key>
+		<data>
+		4mlKCHpscP7nDYtLLX/plV4Lu0k=
+		</data>
+		<key>www/img/ico-edit.svg</key>
+		<data>
+		0WOxsV2yeXOT09eFxhcIPVYT4N8=
+		</data>
+		<key>www/img/ico-photo.svg</key>
+		<data>
+		9gN1M3Bl856BKlgK2EcwUGBLk/s=
+		</data>
+		<key>www/img/ico-plane.svg</key>
+		<data>
+		iFIQpGwdwl5Aau0ZkyHjoWYsWnI=
+		</data>
+		<key>www/img/vis-photo-1.jpg</key>
+		<data>
+		uUlr7x+wzDDQxK+JIVOHWfawhsw=
+		</data>
+		<key>www/img/vis-photo-2.jpg</key>
+		<data>
+		GK8VudvpacRUVtt9C+JiEigyQHE=
+		</data>
+		<key>www/img/vis-photo-3.jpg</key>
+		<data>
+		+dKkMeqQVzEriSwyHPu0N1Ay8Sk=
+		</data>
 		<key>www/index.html</key>
 		<data>
-		YBaWZND9iRmw6qmhIUNdJGhWpGY=
+		J47L9bFshCVWCGBeb7d+k3uAK+k=
 		</data>
 	</dict>
 	<key>rules</key>

@@ -17,7 +17,13 @@ $shopList: '.shopList';
         }
 
         #{$shopListMain} {
-            padding-bottom: $footerHeight;
+            height: calc(100% - #{$headerHeight} - #{$footerHeight});
+
+            &__content {
+                position: absolute;
+                bottom: 0;
+                overflow: hidden;
+            }
 
             &__footer {
                 display: none;

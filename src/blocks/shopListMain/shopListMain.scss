@@ -1,8 +1,30 @@
 $shopListMain: '.shopListMain';
 
 #{$shopListMain} {
-    padding-top: $headerHeight;
-    padding-left: 12px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: calc(100% - #{$headerHeight});
+    top: $headerHeight;
+    left: 0;
+
+    &__wrapper {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &__content {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding-left: 12px;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
 
     &__list {
         @include clearfix;

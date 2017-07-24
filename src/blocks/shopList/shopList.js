@@ -39,11 +39,11 @@
          * Add events listeners
          */
         self.setupListener = () => {
-            self.openFooterBtn.addEventListener('click', event => {
+            self.openFooterBtn.addEventListener('touchend', event => {
                 event.preventDefault();
                 self.openFooter();
             });
-            self.footer.addEventListener('click', event => {
+            self.footer.addEventListener('touchend', event => {
                 if (event.target === self.footer && self.input.value.length === 0) {
 
                     self.closeFooter();
@@ -52,8 +52,8 @@
             });
             self.input.addEventListener('keyup', self.handleKeyUp);
             self.form.addEventListener('submit', self.submit);
-            self.submitBtn.addEventListener('click', self.handleSubmitBtn);
-            self.container.addEventListener('click', self.routeClick);
+            self.submitBtn.addEventListener('touchend', self.handleSubmitBtn);
+            self.container.addEventListener('touchend', self.routeClick);
         };
 
         /**
@@ -190,8 +190,6 @@
          * @param {Object} event
          */
         self.handleSubmitBtn = event => {
-            // event.preventDefault();
-
             self.submit();
         };
 

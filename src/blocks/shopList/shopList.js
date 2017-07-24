@@ -52,7 +52,7 @@
             });
             self.input.addEventListener('keyup', self.handleKeyUp);
             self.form.addEventListener('submit', self.submit);
-            self.submitBtn.addEventListener('click', self.handleFocus);
+            self.submitBtn.addEventListener('click', self.handleSubmitBtn);
             self.container.addEventListener('click', self.routeClick);
         };
 
@@ -189,11 +189,10 @@
          * Keep input focus
          * @param {Object} event
          */
-        self.handleFocus = event => {
-            event.preventDefault();
+        self.handleSubmitBtn = event => {
+            // event.preventDefault();
 
             self.submit();
-            // self.input.focus();
         };
 
         /**
@@ -255,6 +254,7 @@
         self.reset = () => {
             self.form.reset();
             self.hidden.value = '';
+            self.container.classList.remove('shopList_state_valid');
         };
 
         /**

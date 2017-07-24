@@ -40,7 +40,8 @@
          */
         self.setupListener = () => {
             self.openFooterBtn.addEventListener('click', event => {
-                event.preventDefault(); self.openFooter()
+                event.preventDefault();
+                self.openFooter();
             });
             self.footer.addEventListener('click', event => {
                 if (event.target === self.footer && self.input.value.length === 0) {
@@ -160,7 +161,7 @@
          */
         self.openFooter = () => {
             self.container.classList.add('shopList_state_add');
-            self.input.focus();
+            // self.input.focus();
         };
 
         /**
@@ -189,7 +190,7 @@
             event.preventDefault();
 
             self.submit();
-            self.input.focus();
+            // self.input.focus();
         };
 
         /**
@@ -214,7 +215,7 @@
             }
 
             const shopListLength = self.shopList.length;
-            const id = hiddenValue ? hiddenValue :  (shopListLength === '0') ? '0' : '' + (shopListLength + 1);
+            const id = hiddenValue ? hiddenValue : (shopListLength === '0') ? '0' : '' + (shopListLength + 1);
             const isOpen = false;
             const item = self.shopList.find(shopItem => shopItem.id == id);
 

@@ -14,7 +14,8 @@ $shopList: '.shopList';
 
     &#{$shopList}_state_add {
         #{$shopListFooter} {
-            display: flex;
+            pointer-events: auto;
+            visibility: visible;
         }
 
         #{$shopListMain} {

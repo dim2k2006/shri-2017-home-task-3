@@ -46,4 +46,5 @@
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
     <preference name="Orientation" value="portrait" />
+    <preference name="keyboardDisplayRequiresUserAction" value="false" />
 </widget>

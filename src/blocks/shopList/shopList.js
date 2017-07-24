@@ -161,7 +161,10 @@
          */
         self.openFooter = () => {
             self.container.classList.add('shopList_state_add');
-            // self.input.focus();
+
+            setTimeout(() => {
+                self.initFocus();
+            }, 300);
         };
 
         /**
@@ -191,6 +194,13 @@
 
             self.submit();
             // self.input.focus();
+        };
+
+        /**
+         * Set focus on input
+         */
+        self.initFocus = () => {
+            self.input.focus();
         };
 
         /**

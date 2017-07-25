@@ -148,6 +148,7 @@
 
             if (id && value) {
 
+                self.input.id = '';
                 self.input.value = value.title;
                 self.hidden.value = id;
 
@@ -172,7 +173,22 @@
          * Close footer if click outside of footer input
          */
         self.closeFooter = () => {
-            self.container.classList.remove('shopList_state_add');
+            self.hideKeyboard();
+
+            setTimeout(() => {
+                self.container.classList.remove('shopList_state_add');
+            }, 800);
+        };
+
+        /**
+         * Hide keyboard
+         */
+        self.hideKeyboard = () => {
+            if (Keyboard) {
+
+                Keyboard.hide();
+
+            }
         };
 
         /**
@@ -252,6 +268,7 @@
          */
         self.reset = () => {
             self.form.reset();
+            self.input.id = 'shopValue';
             self.hidden.value = '';
             self.container.classList.remove('shopList_state_valid');
         };
@@ -306,11 +323,11 @@
             self.setupListener();
             self.loadData();
             self.render();
+            self.hideKeyboard();
         };
     };
 
     const shopList = new ShopList();
 
-    window.addEventListener('load', () => shopList.init());
     document.addEventListener('deviceready', () => shopList.init());
 })();

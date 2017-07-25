@@ -86,7 +86,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		17RNrN7L8YSCprW3o6hZXE2fcwo=
+		57UtBK8O5CPMSMY/NW4VMHwOvDw=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		oRzDQbb/4I2HvovXqQ4pVZ52eZM=
+		PSbLpBgt6oj4fj286RQIYCzuxuU=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		3plK9TKlIApD7IkzyueZ3/6uRBQ=
+		uyxp2eJk+2d7wVEqhgM3TxqRD0A=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		xtWlRmstPnkWXi7/rvIRfxuzcuY=
+		muZuzhK2nWyljeVyn/MIxqObG9w=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>www/cordova_plugins.js</key>
 		<data>
-		TAIqxmzyxZcTQp9z74pveKIMkqw=
+		envP5gn6Y/FnrO3mpQzWWdQCgI4=
 		</data>
 		<key>www/css/main.min.css</key>
 		<data>
@@ -230,15 +230,19 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		W/cX2PZ9yL424POKOqU/ueQG5Kk=
+		wtr04461X49RwvLjDWnupZKQ9uY=
 		</data>
 		<key>www/js/main.min.js</key>
 		<data>
-		E/0Rpnedch+pDpQh8QdS1Ng/g7Q=
+		MxY+B/T8IoUbXIArb4W0LSBCeyU=
 		</data>
 		<key>www/js/vendor.min.js</key>
 		<data>
-		dLY9N4I5+YZg/5a28NZcONqT1H4=
+		CrLCpWxs4dDobS0cvR/4KOxQoTo=
+		</data>
+		<key>www/plugins/cordova-plugin-keyboard/www/keyboard.js</key>
+		<data>
+		J2etxTXk6SzRUw37cTQJWo8hkas=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -325,7 +329,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		17RNrN7L8YSCprW3o6hZXE2fcwo=
+		57UtBK8O5CPMSMY/NW4VMHwOvDw=
 		</data>
 		<key>CDVLaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -333,7 +337,7 @@
 		</data>
 		<key>CDVLaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		oRzDQbb/4I2HvovXqQ4pVZ52eZM=
+		PSbLpBgt6oj4fj286RQIYCzuxuU=
 		</data>
 		<key>LaunchImage-568h@2x.png</key>
 		<data>
@@ -393,7 +397,7 @@
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		3plK9TKlIApD7IkzyueZ3/6uRBQ=
+		uyxp2eJk+2d7wVEqhgM3TxqRD0A=
 		</data>
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
@@ -401,7 +405,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		xtWlRmstPnkWXi7/rvIRfxuzcuY=
+		muZuzhK2nWyljeVyn/MIxqObG9w=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -421,7 +425,7 @@
 		</data>
 		<key>www/cordova_plugins.js</key>
 		<data>
-		TAIqxmzyxZcTQp9z74pveKIMkqw=
+		envP5gn6Y/FnrO3mpQzWWdQCgI4=
 		</data>
 		<key>www/css/main.min.css</key>
 		<data>
@@ -461,15 +465,19 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		W/cX2PZ9yL424POKOqU/ueQG5Kk=
+		wtr04461X49RwvLjDWnupZKQ9uY=
 		</data>
 		<key>www/js/main.min.js</key>
 		<data>
-		E/0Rpnedch+pDpQh8QdS1Ng/g7Q=
+		MxY+B/T8IoUbXIArb4W0LSBCeyU=
 		</data>
 		<key>www/js/vendor.min.js</key>
 		<data>
-		dLY9N4I5+YZg/5a28NZcONqT1H4=
+		CrLCpWxs4dDobS0cvR/4KOxQoTo=
+		</data>
+		<key>www/plugins/cordova-plugin-keyboard/www/keyboard.js</key>
+		<data>
+		J2etxTXk6SzRUw37cTQJWo8hkas=
 		</data>
 	</dict>
 	<key>rules</key>

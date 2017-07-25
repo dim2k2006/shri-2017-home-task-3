@@ -44,8 +44,9 @@
 
                 self.openFooter();
             });
+            self.footer.addEventListener('pointerdown', event => {
+                event.preventDefault();
 
-            self.footer.addEventListener('click', event => {
                 if (event.target === self.footer && self.input.value.length === 0) {
 
                     self.closeFooter();
@@ -284,8 +285,6 @@
             const contentList = document.createElement('ul');
 
             contentList.classList.add('shopListMain__list');
-
-            console.log(self.shopList);
 
             self.shopList.forEach(function(item) {
                 const element = document.createElement('li');

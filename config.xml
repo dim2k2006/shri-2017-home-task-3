@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+<widget id="shopList" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>shopList</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A sample Apache Cordova shop list application that responds to the deviceready event.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="dim2k2006@yandex.ru" href="https://github.com/dim2k2006">
+        Dmitry
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -25,6 +25,23 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="Orientation" value="portrait" />
     <preference name="keyboardDisplayRequiresUserAction" value="false" />
+    <platform name="ios">
+        <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
+        <icon height="60" src="res/icon/ios/icon-60.png" width="60" />
+        <icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
+        <icon height="76" src="res/icon/ios/icon-76@1x.png" width="76" />
+        <icon height="152" src="res/icon/ios/icon-76@2x.png" width="152" />
+        <icon height="40" src="res/icon/ios/icon-40@1x.png" width="40" />
+        <icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" />
+        <icon height="57" src="res/icon/ios/icon-57@1x.png" width="57" />
+        <icon height="114" src="res/icon/ios/icon-57@2x.png" width="114" />
+        <icon height="72" src="res/icon/ios/icon-72@1x.png" width="72" />
+        <icon height="144" src="res/icon/ios/icon-72@2x.png" width="144" />
+        <icon height="29" src="res/icon/ios/icon-29@1x.png" width="29" />
+        <icon height="58" src="res/icon/ios/icon-29@2x.png" width="58" />
+        <icon height="50" src="res/icon/ios/icon-50@1x.png" width="50" />
+        <icon height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
+    </platform>
     <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.4.0" />
     <plugin name="cordova-plugin-keyboard" spec="^1.1.5" />

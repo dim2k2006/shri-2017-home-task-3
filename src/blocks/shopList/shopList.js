@@ -25,7 +25,7 @@
         /**
          * Check if there data in local storage and load it
          */
-        self.loadData = function() {
+        self.loadData = () => {
             const localData = localStorage.getItem('shopList');
 
             if (localData) {
@@ -39,10 +39,12 @@
          * Add events listeners
          */
         self.setupListener = () => {
-            self.openFooterBtn.addEventListener('click', event => {
+            self.openFooterBtn.addEventListener('pointerdown', event => {
                 event.preventDefault();
+
                 self.openFooter();
             });
+
             self.footer.addEventListener('click', event => {
                 if (event.target === self.footer && self.input.value.length === 0) {
 
@@ -52,7 +54,7 @@
             });
             self.input.addEventListener('keyup', self.handleKeyUp);
             self.form.addEventListener('submit', self.submit);
-            self.submitBtn.addEventListener('click', self.handleSubmitBtn);
+            self.submitBtn.addEventListener('pointerdown', self.handleSubmitBtn);
             self.container.addEventListener('click', self.routeClick);
         };
 
@@ -207,6 +209,8 @@
          * @param {Object} event
          */
         self.handleSubmitBtn = event => {
+            event.preventDefault();
+
             self.submit();
         };
 
@@ -239,7 +243,7 @@
             }
 
             const shopListLength = self.shopList.length;
-            const id = hiddenValue ? hiddenValue : (shopListLength === '0') ? '0' : '' + (shopListLength + 1);
+            const id = hiddenValue ? hiddenValue : self.shopList.length >= 1 ? self.shopList[self.shopList.length - 1].id + 1 : 0;
             const isOpen = false;
             const item = self.shopList.find(shopItem => shopItem.id == id);
 
@@ -276,10 +280,12 @@
         /**
          * Render shop list
          */
-        self.render = function() {
+        self.render = () => {
             const contentList = document.createElement('ul');
 
             contentList.classList.add('shopListMain__list');
+
+            console.log(self.shopList);
 
             self.shopList.forEach(function(item) {
                 const element = document.createElement('li');
@@ -309,7 +315,7 @@
         /**
          * Update local storage
          */
-        self.updateLocalStorage = function() {
+        self.updateLocalStorage = () => {
             const data = JSON.stringify(self.shopList);
 
             localStorage.setItem('shopList', data);

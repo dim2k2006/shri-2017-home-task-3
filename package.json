@@ -91,6 +91,7 @@
     },
     "vendorScripts": {
         "path": [
+            "./src/bower_components/pepjs/dist/pep.min.js",
             "./node_modules/jspolyfill-array.prototype.find/find.js"
         ]
     }

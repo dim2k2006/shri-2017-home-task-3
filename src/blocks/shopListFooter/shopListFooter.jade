@@ -8,7 +8,7 @@ mixin shopListFooter
                     +e('input').input(type="text", id="shopValue", placeholder="Например, овсяные хлопья")
                     +e('input').hidden(type="hidden", value="")
 
-                    +e('label').btn(for="shopValue", class="shopListFooter__btn_type_submit")
+                    +e('label').btn(for="shopValue", touch-action="none", class="shopListFooter__btn_type_submit")
 
             +e('div').footer
                 +e('ul').list

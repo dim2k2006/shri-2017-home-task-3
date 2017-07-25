@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="shopList" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.shoplist.shopList" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>shopList</name>
     <description>
         A sample Apache Cordova shop list application that responds to the deviceready event.
@@ -57,17 +57,14 @@
         <icon density="mdpi" src="res/icon/android/mdpi.png" />
         <icon density="hdpi" src="res/icon/android/hdpi.png" />
         <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
-
-        <!-- you can use any density that exists in the Android project -->
-        <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
-        <splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi"/>
-        <splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi"/>
-        <splash src="res/screen/android/splash-land-xhdpi.png" density="land-xhdpi"/>
-
-        <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
-        <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
-        <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
-        <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
+        <splash density="land-hdpi" src="res/screen/android/splash-land-hdpi.png" />
+        <splash density="land-ldpi" src="res/screen/android/splash-land-ldpi.png" />
+        <splash density="land-mdpi" src="res/screen/android/splash-land-mdpi.png" />
+        <splash density="land-xhdpi" src="res/screen/android/splash-land-xhdpi.png" />
+        <splash density="port-hdpi" src="res/screen/android/splash-port-hdpi.png" />
+        <splash density="port-ldpi" src="res/screen/android/splash-port-ldpi.png" />
+        <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
+        <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
     </platform>
     <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.4.0" />

@@ -1,49 +1,91 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<html lang="ru">
 
-    http://www.apache.org/licenses/LICENSE-2.0
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="Description" content="Покупки">
+		<meta name="Keywords" content="Покупки">
+		<title>Покупки</title>
+		<link href="css/vendor.min.css" rel="stylesheet">
+		<link href="css/main.min.css" rel="stylesheet">
+	</head>
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+	<body>
+		<main class="main">
+			<section touch-action="none" class="shopList">
+				<header class="shopListHeader">
+					<div class="shopListHeader__wrapper">
+						<div class="shopListHeader__content">
+							<div class="shopListHeader__box">
+								<div class="shopListHeader__title">
+									<h1>Покупки</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<section class="shopListMain">
+					<div class="shopListMain__wrapper">
+						<div class="shopListMain__content"></div>
+						<div class="shopListMain__footer">
+							<div id="shopListItem" class="shopListMain__template">
+								<div class="shopListItem">
+									<div class="shopListItem__wrapper">
+										<div class="shopListItem__content"></div>
+										<div class="shopListItem__footer">
+											<ul class="shopListItem__list">
+												<li class="shopListItem__item">
+													<button class="shopListItem__btn shopListItem__btn_type_complete"></button>
+												</li>
+												<li class="shopListItem__item">
+													<button class="shopListItem__btn shopListItem__btn_type_edit"></button>
+												</li>
+												<li class="shopListItem__item">
+													<button class="shopListItem__btn shopListItem__btn_type_photo"></button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button touch-action="none" class="shopListMain__open"></button>
+						</div>
+					</div>
+				</section>
+				<footer touch-action="none" class="shopListFooter">
+					<div class="shopListFooter__wrapper">
+						<div class="shopListFooter__content">
+							<form class="shopListFooter__form">
+								<!--button.shopListFooter__btn(class="shopListFooter__btn_type_photo")-->
+								<input type="text" id="shopValue" placeholder="Например, овсяные хлопья" class="shopListFooter__input">
+								<input type="hidden" value="" class="shopListFooter__hidden">
+								<label for="shopValue" touch-action="none" class="shopListFooter__btn shopListFooter__btn_type_submit"></label>
+							</form>
+						</div>
+						<div class="shopListFooter__footer">
+							<ul class="shopListFooter__list">
+								<li class="shopListFooter__item">
+									<img src="img/vis-photo-1.jpg" alt="">
+								</li>
+								<li class="shopListFooter__item">
+									<img src="img/vis-photo-2.jpg" alt="">
+								</li>
+								<li class="shopListFooter__item">
+									<img src="img/vis-photo-3.jpg" alt="">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</footer>
+			</section>
+		</main>
+		<script src="cordova.js"></script>
+		<script src="js/vendor.min.js"></script>
+		<script src="js/main.min.js"></script>
+	</body>
+
 </html>

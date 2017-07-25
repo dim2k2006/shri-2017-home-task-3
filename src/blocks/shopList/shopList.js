@@ -39,11 +39,11 @@
          * Add events listeners
          */
         self.setupListener = () => {
-            self.openFooterBtn.addEventListener('touchend', event => {
+            self.openFooterBtn.addEventListener('click', event => {
                 event.preventDefault();
                 self.openFooter();
             });
-            self.footer.addEventListener('touchend', event => {
+            self.footer.addEventListener('click', event => {
                 if (event.target === self.footer && self.input.value.length === 0) {
 
                     self.closeFooter();
@@ -52,8 +52,8 @@
             });
             self.input.addEventListener('keyup', self.handleKeyUp);
             self.form.addEventListener('submit', self.submit);
-            self.submitBtn.addEventListener('touchend', self.handleSubmitBtn);
-            self.container.addEventListener('touchend', self.routeClick);
+            self.submitBtn.addEventListener('click', self.handleSubmitBtn);
+            self.container.addEventListener('click', self.routeClick);
         };
 
         /**
@@ -151,6 +151,7 @@
                 self.input.value = value.title;
                 self.hidden.value = id;
 
+                self.container.classList.add('shopList_state_valid');
                 self.openFooter();
 
             }

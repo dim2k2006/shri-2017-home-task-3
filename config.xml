@@ -42,6 +42,12 @@
         <icon height="50" src="res/icon/ios/icon-50@1x.png" width="50" />
         <icon height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
     </platform>
+    <platform name="android">
+        <icon src="res/icon/android/ldpi.png" density="ldpi" />
+        <icon src="res/icon/android/mdpi.png" density="mdpi" />
+        <icon src="res/icon/android/hdpi.png" density="hdpi" />
+        <icon src="res/icon/android/xhdpi.png" density="xhdpi" />
+    </platform>
     <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.4.0" />
     <plugin name="cordova-plugin-keyboard" spec="^1.1.5" />

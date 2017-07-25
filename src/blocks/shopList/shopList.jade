@@ -3,7 +3,7 @@ include ../shopListMain/shopListMain
 include ../shopListFooter/shopListFooter
 
 mixin shopList
-    +b('section').shopList
+    +b('section').shopList(touch-action="none")
         +shopListHeader
 
         +shopListMain

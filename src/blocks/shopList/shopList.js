@@ -56,7 +56,7 @@
             self.input.addEventListener('keyup', self.handleKeyUp);
             self.form.addEventListener('submit', self.submit);
             self.submitBtn.addEventListener('pointerdown', self.handleSubmitBtn);
-            self.container.addEventListener('click', self.routeClick);
+            self.container.addEventListener('pointerdown', self.routeClick);
         };
 
         /**
